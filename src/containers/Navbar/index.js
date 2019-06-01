@@ -1,11 +1,9 @@
-import App from './App.jsx'
+import Navbar from './Navbar.jsx'
 import { connect } from 'react-redux'
 import { bindActionCreators } from "redux"
 
 const mapStateToProps = state => {
-    return {
-        helloWorld: 'hello world'
-    }
+    return {}
 }
 
 const mapDispatchToProps = dispatch => {
@@ -15,4 +13,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(App)
+)(Navbar)
