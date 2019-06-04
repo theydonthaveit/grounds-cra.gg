@@ -1,11 +1,10 @@
-import App from './App.jsx'
+import Auth from './Auth.jsx'
 import { connect } from 'react-redux'
 import { bindActionCreators } from "redux"
 
 const mapStateToProps = state => {
     return {
-        helloWorld: 'hello world',
-        dashboard: 'homeScreenForm'
+        isAuthenticated: true
     }
 }
 
@@ -16,4 +15,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(App)
+)(Auth)
