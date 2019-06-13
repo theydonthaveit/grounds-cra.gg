@@ -59,6 +59,7 @@ function HomeScreenForm({ setHomeScreenForm }) {
             .then(json => {
                 setPostcodeStatus(true)
                 setPostcode(postcode)
+                console.log(json)
             })
     }
 
