@@ -1,19 +1,23 @@
 import App from './App.jsx'
 import { connect } from 'react-redux'
-import { bindActionCreators } from "redux"
+// import { bindActionCreators } from "redux"
 
 const mapStateToProps = state => {
+    const { screen } = state.screenReducer
+
+    console.log('app state')
+    console.log(screen)
+
     return {
-        helloWorld: 'hello world',
-        dashboard: 'homeScreenForm'
+        screen
     }
 }
 
-const mapDispatchToProps = dispatch => {
-    return bindActionCreators({})
-}
+// const mapDispatchToProps = (dispatch) => {
+//     return bindActionCreators({})
+// }
 
 export default connect(
     mapStateToProps,
-    mapDispatchToProps
+    null
 )(App)

@@ -1,8 +1,8 @@
 import {
     combineReducers
 } from 'redux';
-import formReducer from './formReducer'
+import screenReducer from './screenReducer'
 
 export default combineReducers({
-    formReducer
+    screenReducer
 })

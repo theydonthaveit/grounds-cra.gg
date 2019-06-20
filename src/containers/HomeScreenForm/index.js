@@ -1,19 +1,19 @@
 import HomeScreenForm from './HomeScreenForm.jsx'
 import { connect } from 'react-redux'
 import { bindActionCreators } from "redux"
-import { setHomeScreenForm } from "../../actions/formActions"
+import { setScreen } from '../../actions/screenAction'
 
-const mapStateToProps = state => {
-    return {}
-}
+// const mapStateToProps = (state) => {
+//     return {}
+// }
 
 function mapDispatchToProps(dispatch) {
     return bindActionCreators({
-        setHomeScreenForm
-    })
+        setScreen
+    }, dispatch)
 }
 
 export default connect(
-    mapStateToProps,
+    null,
     mapDispatchToProps
 )(HomeScreenForm)
